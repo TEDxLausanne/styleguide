@@ -1,6 +1,6 @@
 /* ==========================================================
- * style.scss
- * Project sass files and font files import
+ * style-variables.scss
+ * Styleguide specific variables
  *
  * Author: Marc Friederich, m.friederich@me.com
  * Date:   2014-07-28 21:30:14
@@ -8,14 +8,4 @@
  * Licensed under MIT
  =========================================================== */
 
-@charset "UTF-8";
-
-@import 'style-variables';
-@import 'bootstrap';
-
-// Layout
-@import 'components/brand';
-
-// Components
-
-
+$tedx-red:         #ff2b06 !default;
