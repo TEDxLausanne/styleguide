@@ -1,0 +1,13 @@
+**/.DS_STORE
+node_modules/*
+bower_components/*
+
+.sass-cache
+
+styleguide/.bower.json
+styleguide/bower.json
+styleguide/LICENSE
+styleguide/package.json
+styleguide/README.md
+styleguide
+build
