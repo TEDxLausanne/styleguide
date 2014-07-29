@@ -15,7 +15,6 @@ index: README
 css_include:
   - 'css/vendors.min.css'
   - 'css/style.min.css'
-  - 'css/print.min.css'
 
 # List all js to include for the styleguide render examples
 js_include:
@@ -27,7 +26,6 @@ name_scope: ' - '
 
 # Order of Category Wrapper
 cat_order:
-  - Design Principles
-  - Base Layout
-  - Navigation modules
-  - Content Modules
+  - Layout
+  - Components
+  - JavaScript

@@ -24,6 +24,7 @@
     stylish = require('jshint-stylish');
     deploy = require("gulp-gh-pages");
 
+
 // JS task
 gulp.task('scripts', function() {
   gulp.src('./assets/js/*.js')
