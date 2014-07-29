@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title></title>
+    <title>Layout - Code</title>
 
     <!-- Styleguide CSS -->
     <link rel="stylesheet" href="./theme-build/css/vendors.css">
@@ -489,7 +489,7 @@
             
               
               
-                <li><a href="layout_-_code.html">Code</a></li>
+                <li><a class="active" href="layout_-_code.html">Code</a></li>
               
             
           
@@ -553,6 +553,8 @@
 
     <header class="cortana-header sb-slide">
       
+        <h1>Code</h1>
+      
       <div id="open-left" class="cortana-menu-btn">
         <span></span>
         <span></span>
@@ -570,6 +572,18 @@
         <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
           <ul bs-scrollspy-list data-offset="-30">
             
+              
+                <li><a href="#a-inline-code">Inline code</a></li>
+              
+            
+              
+                <li><a href="#b-user-input">User input</a></li>
+              
+            
+              
+                <li><a href="#c-code-block">Code block</a></li>
+              
+            
           </ul>
         </nav>
 
@@ -578,8 +592,18 @@
 
 
 
-<h1>TEDxLausanne</h1>
-        </div>
+<h1 id="a-inline-code">Inline code</h1>
+<div class="codeExample"><div class="exampleOutput">For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+</div><div class="codeBlock"><div class="highlight"><pre>For example, <span class="nt">&lt;code&gt;</span><span class="ni">&amp;lt;</span>section<span class="ni">&amp;gt;</span><span class="nt">&lt;/code&gt;</span> should be wrapped as inline.
+</pre></div></div></div>
+<h1 id="b-user-input">User input</h1>
+<div class="codeExample"><div class="exampleOutput">To switch directories, type <kbd>cd</kbd> followed by the name of the directory.
+</div><div class="codeBlock"><div class="highlight"><pre>To switch directories, type <span class="nt">&lt;kbd&gt;</span>cd<span class="nt">&lt;/kbd&gt;</span> followed by the name of the directory.
+</pre></div></div></div>
+<h1 id="c-code-block">Code block</h1>
+<div class="codeExample"><div class="exampleOutput"><pre>&lt;p&gt;Paragraph content...&lt;/p&gt;</pre>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;pre&gt;</span><span class="ni">&amp;lt;</span>p<span class="ni">&amp;gt;</span>Paragraph content...<span class="ni">&amp;lt;</span>/p<span class="ni">&amp;gt;</span><span class="nt">&lt;/pre&gt;</span>
+</pre></div></div></div>        </div>
       </div>
     </div>
 

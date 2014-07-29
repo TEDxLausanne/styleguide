@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title></title>
+    <title>JavaScript - Buttons JS</title>
 
     <!-- Styleguide CSS -->
     <link rel="stylesheet" href="./theme-build/css/vendors.css">
@@ -267,7 +267,7 @@
             
               
               
-                <li><a href="javascript_-_buttons_js.html">Buttons JS</a></li>
+                <li><a class="active" href="javascript_-_buttons_js.html">Buttons JS</a></li>
               
             
           
@@ -553,6 +553,8 @@
 
     <header class="cortana-header sb-slide">
       
+        <h1>Buttons JS</h1>
+      
       <div id="open-left" class="cortana-menu-btn">
         <span></span>
         <span></span>
@@ -570,6 +572,18 @@
         <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
           <ul bs-scrollspy-list data-offset="-30">
             
+              
+                <li><a href="#b-single-toggle">Single toggle</a></li>
+              
+            
+              
+                <li><a href="#c-checkbox">Checkbox</a></li>
+              
+            
+              
+                <li><a href="#d-radio">Radio</a></li>
+              
+            
           </ul>
         </nav>
 
@@ -578,8 +592,58 @@
 
 
 
-<h1>TEDxLausanne</h1>
-        </div>
+<h1 id="b-single-toggle">Single toggle</h1>
+<div class="codeExample"><div class="exampleOutput"><button type="button" class="btn btn-primary" data-toggle="button">Single toggle</button>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"button"</span><span class="nt">&gt;</span>Single toggle<span class="nt">&lt;/button&gt;</span>
+</pre></div></div></div>
+<h1 id="c-checkbox">Checkbox</h1>
+<div class="codeExample"><div class="exampleOutput"><div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary">
+    <input type="checkbox"> Option 1
+  </label>
+  <label class="btn btn-primary">
+    <input type="checkbox"> Option 2
+  </label>
+  <label class="btn btn-primary">
+    <input type="checkbox"> Option 3
+  </label>
+</div>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">data-toggle=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Option 1
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Option 2
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Option 3
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="d-radio">Radio</h1>
+<div class="codeExample"><div class="exampleOutput"><div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary">
+    <input type="radio"> Option 1
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio"> Option 2
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio"> Option 3
+  </label>
+</div>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span> <span class="na">data-toggle=</span><span class="s">"buttons"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span><span class="nt">&gt;</span> Option 1
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span><span class="nt">&gt;</span> Option 2
+  <span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span><span class="nt">&gt;</span> Option 3
+  <span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>        </div>
       </div>
     </div>
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title></title>
+    <title>Components - Media</title>
 
     <!-- Styleguide CSS -->
     <link rel="stylesheet" href="./theme-build/css/vendors.css">
@@ -376,7 +376,7 @@
             
               
               
-                <li><a href="components_-_media.html">Media</a></li>
+                <li><a class="active" href="components_-_media.html">Media</a></li>
               
             
           
@@ -553,6 +553,8 @@
 
     <header class="cortana-header sb-slide">
       
+        <h1>Media</h1>
+      
       <div id="open-left" class="cortana-menu-btn">
         <span></span>
         <span></span>
@@ -570,6 +572,14 @@
         <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
           <ul bs-scrollspy-list data-offset="-30">
             
+              
+                <li><a href="#a-media">Default media</a></li>
+              
+            
+              
+                <li><a href="#b-media-list">Media list</a></li>
+              
+            
           </ul>
         </nav>
 
@@ -578,8 +588,164 @@
 
 
 
-<h1>TEDxLausanne</h1>
+<h1 id="a-media">Default media</h1>
+<div class="codeExample"><div class="exampleOutput"><div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="http://lorempixel.com/64/64/cats" style="width: 64px; height: 64px;">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Media heading</h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  </div>
+</div>
+<div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="http://lorempixel.com/64/64/cats" style="width: 64px; height: 64px;">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">Media heading</h4>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <div class="media">
+      <a class="pull-left" href="#">
+        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="http://lorempixel.com/64/64/cats" style="width: 64px; height: 64px;">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Nested media heading</h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      </div>
+    </div>
+  </div>
+</div>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"pull-left"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"media-object"</span> <span class="na">data-src=</span><span class="s">"holder.js/64x64"</span> <span class="na">alt=</span><span class="s">"64x64"</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/64/64/cats"</span> <span class="na">style=</span><span class="s">"width: 64px; height: 64px;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"media-heading"</span><span class="nt">&gt;</span>Media heading<span class="nt">&lt;/h4&gt;</span>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"pull-left"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"media-object"</span> <span class="na">data-src=</span><span class="s">"holder.js/64x64"</span> <span class="na">alt=</span><span class="s">"64x64"</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/64/64/cats"</span> <span class="na">style=</span><span class="s">"width: 64px; height: 64px;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"media-heading"</span><span class="nt">&gt;</span>Media heading<span class="nt">&lt;/h4&gt;</span>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"pull-left"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"media-object"</span> <span class="na">data-src=</span><span class="s">"holder.js/64x64"</span> <span class="na">alt=</span><span class="s">"64x64"</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/64/64/cats"</span> <span class="na">style=</span><span class="s">"width: 64px; height: 64px;"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"media-heading"</span><span class="nt">&gt;</span>Nested media heading<span class="nt">&lt;/h4&gt;</span>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="b-media-list">Media list</h1>
+<div class="codeExample"><div class="exampleOutput">  <ul class="media-list">
+    <li class="media">
+      <a class="pull-left" href="#">
+        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="http://lorempixel.com/64/64/cats" style="width: 64px; height: 64px;">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+        <!-- Nested media object -->
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="http://lorempixel.com/64/64/cats" style="width: 64px; height: 64px;">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Nested media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+            <!-- Nested media object -->
+            <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="http://lorempixel.com/64/64/cats" style="width: 64px; height: 64px;">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Nested media heading</h4>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Nested media object -->
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="http://lorempixel.com/64/64/cats" style="width: 64px; height: 64px;">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Nested media heading</h4>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="media">
+      <a class="pull-right" href="#">
+        <img class="media-object" data-src="holder.js/64x64" alt="64x64" src="http://lorempixel.com/64/64/cats" style="width: 64px; height: 64px;">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Media heading</h4>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+      </div>
+    </li>
+  </ul>
+</div><div class="codeBlock"><div class="highlight"><pre>  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"media-list"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"pull-left"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"media-object"</span> <span class="na">data-src=</span><span class="s">"holder.js/64x64"</span> <span class="na">alt=</span><span class="s">"64x64"</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/64/64/cats"</span> <span class="na">style=</span><span class="s">"width: 64px; height: 64px;"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"media-heading"</span><span class="nt">&gt;</span>Media heading<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.<span class="nt">&lt;/p&gt;</span>
+        <span class="c">&lt;!-- Nested media object --&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"pull-left"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"media-object"</span> <span class="na">data-src=</span><span class="s">"holder.js/64x64"</span> <span class="na">alt=</span><span class="s">"64x64"</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/64/64/cats"</span> <span class="na">style=</span><span class="s">"width: 64px; height: 64px;"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"media-heading"</span><span class="nt">&gt;</span>Nested media heading<span class="nt">&lt;/h4&gt;</span>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+            <span class="c">&lt;!-- Nested media object --&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"pull-left"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"media-object"</span> <span class="na">data-src=</span><span class="s">"holder.js/64x64"</span> <span class="na">alt=</span><span class="s">"64x64"</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/64/64/cats"</span> <span class="na">style=</span><span class="s">"width: 64px; height: 64px;"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"media-heading"</span><span class="nt">&gt;</span>Nested media heading<span class="nt">&lt;/h4&gt;</span>
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="c">&lt;!-- Nested media object --&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"pull-left"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"media-object"</span> <span class="na">data-src=</span><span class="s">"holder.js/64x64"</span> <span class="na">alt=</span><span class="s">"64x64"</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/64/64/cats"</span> <span class="na">style=</span><span class="s">"width: 64px; height: 64px;"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"media-heading"</span><span class="nt">&gt;</span>Nested media heading<span class="nt">&lt;/h4&gt;</span>
+            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"pull-right"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"media-object"</span> <span class="na">data-src=</span><span class="s">"holder.js/64x64"</span> <span class="na">alt=</span><span class="s">"64x64"</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/64/64/cats"</span> <span class="na">style=</span><span class="s">"width: 64px; height: 64px;"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"media-heading"</span><span class="nt">&gt;</span>Media heading<span class="nt">&lt;/h4&gt;</span>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+</pre></div></div></div>        </div>
       </div>
     </div>
 

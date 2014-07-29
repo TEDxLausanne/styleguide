@@ -4,12 +4,12 @@ class Cortanamarkdownrenderer < Redcarpet::Render::HTML
       if language.include?('js')
         # first actually insert the code in the docs so that it will run and make our example work.
         '</div><script>' + code + '</script>
-        <div class="codeBlock jsExample">' + Pygments.highlight(code) + '</div><div class="cortana-content">'
+        <div class="codeBlock jsExample">' + Pygments.highlight(code) + '</div><div class="cortana-content-test">'
       else
-        '</div><div class="codeExample">' + '<div class="exampleOutput">' + render_html(code, language) + '</div>' + '<div class="codeBlock">' + Pygments.highlight(code, :lexer => get_lexer(language)) + '</div>' + '</div><div class="cortana-content">'
+        '</div><div class="codeExample">' + '<div class="exampleOutput">' + render_html(code, language) + '</div>' + '<div class="codeBlock">' + Pygments.highlight(code, :lexer => get_lexer(language)) + '</div>' + '</div><div class="cortana-content-test">'
       end
     else
-      '</div><div class="codeBlock">' + Pygments.highlight(code) + '</div><div class="cortana-content">'
+      '</div><div class="codeBlock">' + Pygments.highlight(code) + '</div><div class="cortana-content-test">'
     end
   end
 

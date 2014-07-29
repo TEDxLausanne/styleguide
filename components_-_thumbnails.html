@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title></title>
+    <title>Components - Thumbnails</title>
 
     <!-- Styleguide CSS -->
     <link rel="stylesheet" href="./theme-build/css/vendors.css">
@@ -405,7 +405,7 @@
             
               
               
-                <li><a href="components_-_thumbnails.html">Thumbnails</a></li>
+                <li><a class="active" href="components_-_thumbnails.html">Thumbnails</a></li>
               
             
           
@@ -553,6 +553,8 @@
 
     <header class="cortana-header sb-slide">
       
+        <h1>Thumbnails</h1>
+      
       <div id="open-left" class="cortana-menu-btn">
         <span></span>
         <span></span>
@@ -570,6 +572,14 @@
         <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
           <ul bs-scrollspy-list data-offset="-30">
             
+              
+                <li><a href="#a-thumbnail">Default thumbnail</a></li>
+              
+            
+              
+                <li><a href="#b-custom-content">Custom content</a></li>
+              
+            
           </ul>
         </nav>
 
@@ -578,8 +588,78 @@
 
 
 
-<h1>TEDxLausanne</h1>
-        </div>
+<h1 id="a-thumbnail">Default thumbnail</h1>
+<div class="codeExample"><div class="exampleOutput"><div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://lorempixel.com/300/300/cats" alt="Some cats image">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://lorempixel.com/300/300/cats" alt="Some cats image">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://lorempixel.com/300/300/cats" alt="Some cats image">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://lorempixel.com/300/300/cats" alt="Some cats image">
+    </a>
+  </div>
+</div>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 col-md-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"thumbnail"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/300/300/cats"</span> <span class="na">alt=</span><span class="s">"Some cats image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 col-md-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"thumbnail"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/300/300/cats"</span> <span class="na">alt=</span><span class="s">"Some cats image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 col-md-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"thumbnail"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/300/300/cats"</span> <span class="na">alt=</span><span class="s">"Some cats image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-6 col-md-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"thumbnail"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/300/300/cats"</span> <span class="na">alt=</span><span class="s">"Some cats image"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>
+<h1 id="b-custom-content">Custom content</h1>
+<div class="codeExample"><div class="exampleOutput"><div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://lorempixel.com/300/300/cats" alt="Some cats image">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim tanto opus est instrumento in optimis.</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-6 col-md-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"thumbnail"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://lorempixel.com/300/300/cats"</span> <span class="na">alt=</span><span class="s">"Some cats image"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"caption"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h3&gt;</span>Thumbnail label<span class="nt">&lt;/h3&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid enim tanto opus est instrumento in optimis.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>        </div>
       </div>
     </div>
 
