@@ -134,6 +134,13 @@ gulp.task('build-images', function() {
 //           .pipe(gulp.dest('build/fonts'));
 // });
 
+var deploy = require("gulp-gh-pages");
+
+gulp.task('deploy', function () {
+    gulp.src("./styleguide/**/*")
+        .pipe(deploy());
+});
+
 gulp.task('build-pages', function() {
   gulp.src(['assets/pages/**'])
     .pipe(gulp.dest('styleguide/pages'));
