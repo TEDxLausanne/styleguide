@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html ng-app="cortana">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Base Layout - Brand</title>
+
+    <!-- Styleguide CSS -->
+    <link rel="stylesheet" href="./theme-build/css/vendors.css">
+    <link rel="stylesheet" href="./theme-build/css/cortana.css">
+
+    <!-- Source CSS -->
+    
+      <link rel="stylesheet" href="css/vendors.min.css">
+    
+      <link rel="stylesheet" href="css/style.min.css">
+    
+      <link rel="stylesheet" href="css/print.min.css">
+    
+
+    <!--[if lt IE 9]>
+      <script src="theme-build/polyfill/html5shiv.js"></script>
+      <script src="theme-build/polyfill/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+  <body class="cortana-body"  ng-controller="MainController">
+
+    <div class="sb-slidebar sb-left cortana-sidenav sb-style-push">
+
+      
+      
+        
+        
+          
+        
+      
+        
+        
+      
+
+      <nav class="cortana-nav">
+        <ul>
+          
+            <li><a href="index.html">Home</a></li>
+          
+        </ul>
+        
+          <h3>Base Layout</h3>
+          <ul>
+          
+            
+              
+              
+                <li><a class="active" href="base_layout_-_brand.html">Brand</a></li>
+              
+            
+          
+            
+              
+              
+                <li><a href="base_layout_-_typography.html">Typography</a></li>
+              
+            
+          
+          </ul>
+        
+      </nav>
+    </div>
+
+    <header class="cortana-header sb-slide">
+      
+        <h1>Brand</h1>
+      
+      <div id="open-left" class="cortana-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="cortana-search-wrapper" ng-controller="TypeaheadCtrl">
+        <input id="cortana-search" type="text" class="form-control cortana-search" ng-model="customSelected" placeholder="Search" typeahead="data as data.title for data in searchData | filter:{title:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control" typeahead-on-select="onSelect($item, $model, $label)">
+      </div>
+    </header>
+
+    <div id="sb-site">
+
+      <div class="cortana-container">
+
+        <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
+          <ul bs-scrollspy-list data-offset="-30">
+             
+              
+                <li><a href="#b-colors">Colors</a></li>
+              
+             
+              
+                <li><a href="#b-logo">Logo</a></li>
+              
+            
+          </ul>
+        </nav>
+
+        <div class="cortana-content-wrapper">
+          <div class="cortana-content">
+
+
+
+<h1 id="b-colors">Colors</h1>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 col-xs-6"><div style="background:#DC0018"><br><p class="text-center" style="color:white;">#DC0018</p><br></div><pre class="text-center">$brand-primary</pre></div>
+    <div class="col-sm-3 col-xs-6"><div style="background:#242424"><br><p class="text-center" style="color:white;">#242424</p><br></div><pre class="text-center">$gray-darker</pre></div>
+    <div class="clearfix visible-xs-block"></div>
+    <div class="col-sm-3 col-xs-6"><div style="background:#333333"><br><p class="text-center" style="color:white;">#333333</p><br></div><pre class="text-center">$gray-dark</pre></div>
+    <div class="col-sm-3 col-xs-6"><div style="background:#666666"><br><p class="text-center" style="color:white;">#666666</p><br></div><pre class="text-center">$gray</pre></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 col-xs-6"><div style="background:#b4b4b4"><br><p class="text-center" style="color:black;">#b4b4b4</p><br></div><pre class="text-center">$gray-light</pre></div>
+    <div class="col-sm-3 col-xs-6"><div style="background:#ebebeb"><br><p class="text-center" style="color:black;">#ebebeb</p><br></div><pre class="text-center">$gray-lighter</pre></div>
+  </div>
+</div>
+
+<h1 id="b-logo">Logo</h1>
+<div class="codeExample"><div class="exampleOutput"><a href="#" class="brand hidden-xs">
+  <img src="img/logo_tedx.svg" onerror="this.onerror=null; this.src='img/logo_tedx.png'" alt="TEDxLausanne" />
+</a>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"brand hidden-xs"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"img/logo_tedx.svg"</span> <span class="na">onerror=</span><span class="s">"this.onerror=null; this.src='img/logo_tedx.png'"</span> <span class="na">alt=</span><span class="s">"TEDxLausanne"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</pre></div></div></div>        </div>
+      </div>
+    </div>
+
+    <footer class="cortana-footer">
+      Build with love using Trulia's <a href="https://github.com/trulia/hologram">Hologram</a> and <a href="https://github.com/Yago31/Cortana">Cortana</a> !
+    </footer>
+  
+  </div>
+
+  <script src="theme-build/js/vendors.min.js"></script>
+  <script type="text/javascript">
+    var jQuery_no_conflict = $.noConflict(true);
+  </script>
+  <script src="theme-build/js/main.js"></script>
+  <script type="text/javascript">
+    function TypeaheadCtrl($scope) {
+      $scope.selected = undefined;
+      $scope.searchData = 
+      [
+        
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Colors",
+              "breadcrumb": "Base Layout - Brand > Colors",
+              "path": "base_layout_-_brand.html#b-colors"
+              },
+            
+              
+              
+              {
+              "title": "Logo",
+              "breadcrumb": "Base Layout - Brand > Logo",
+              "path": "base_layout_-_brand.html#b-logo"
+              },
+            
+          
+        
+          
+            
+              
+              
+              {
+              "title": "Typography",
+              "breadcrumb": "Base Layout - Typography > Typography",
+              "path": "base_layout_-_typography.html#b-typography"
+              },
+            
+          
+        
+          
+        
+      {}];
+      $scope.onSelect = function ($item, $model, $label) {
+        window.location.replace($item.path);
+      };
+    }
+  </script>
+  <script type="text/ng-template" id="customTemplate.html">
+    <a href="{{match.model.path}}">
+      <p class="cortana-search-title">{{match.model.title}}</p>
+      <p class="cortana-search-path">{{match.model.breadcrumb}}</p>
+    </a>
+  </script>
+  
+    <script type="text/javascript" src="js/vendors.min.js"></script>
+  
+    <script type="text/javascript" src="js/main.min.js"></script>
+  
+</body>
+</html>

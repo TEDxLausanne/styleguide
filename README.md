@@ -1,50 +1,90 @@
-TEDxLausanne styleguide
-=======================
+#Cortana : a sexy Hologram theme
 
-## Styleguide
+>Cortana is a nice theme for Trulia's [Hologram](https://github.com/trulia/hologram), the ruby front-end doc generator, and inspired by PebbleRoad's [Tapestry](https://github.com/PebbleRoad/tapestry).
 
-The styleguide is located in the `/styleguide` directory. You can open `/styleguide/index.html` directly in your browser.
+Check the [Demo](http://yago31.github.io/Cortana-example)
 
-## How to use it in your project
+##Usage
+To install the last version of **Hologram** (required) :
 
-There are several ways to get started:
-
-  - Clone the repo `git clone https://github.com/TEDxLausanne/styleguide.git`
-
-## Installation (development tools)
-This is not needed to use the styleguide, only if you want to modify it to fix some bugs and contribute.
-
-### Installation on OSX/Unix
-
-> We use [Gulp.js](http://gulpjs.com) to run tasks and build our styleguide with [Hologram](https://github.com/trulia/hologram).
-
-Make sure you have [Node.js](http://nodejs.org) installed.
+````
+$ gem install hologram
+````
 
 
-Install all the dependencies you need:
 
-```
-$ npm install -g gulp
+To install **Cortana**, use Bower :
+
+````
+$ bower install --save-dev Cortana
+````
+
+Your `hologram_config.yml` should look like :
+
+````
+# Directory to parse
+source: ./your-code
+
+# Directory to build the styleguide
+destination: ./styleguide
+
+# Hologram theme
+documentation_assets: ./bower_components/Cortana
+custom_markdown: ./bower_components/Cortana/CortanaMarkdownRenderer.rb
+
+# To have a custom index page build with your README.md
+index: README
+
+# List all css to include for the styleguide render examples (path from styleguide directory)
+css_include:
+  - '../assets/css/vendors.css'
+  - '../assets/css/styles.css'
+
+# List all js to include for the styleguide render examples (path from styleguide directory)
+js_include:
+  - 'http://code.jquery.com/jquery-1.10.2.min.js'
+  - '../assets/js/main.js'
+
+# String who is used to split the category name and create category wrapper
+name_scope: ' - '
+````
+
+We recomand to place a `README.md` in the root of your source directory to build a custom styleguide index page.
+
+To have add a **custom category wrapper** like in the example, just add it before your category name with `space-space` and before all the other categories in the same wrapper. This `name_scope` can be change in the `hologram_config.yml`. You will have something like this :
+
+````
+/*doc
+---
+title: My Title
+name: myname
+category: General - Button
+---
+
+Some Markdown comment and markup...
+
+*/
+````
+
+## Edition
+To edit **Cortana** you will need [Bower](bower.io),  [npm](https://www.npmjs.org) and [NodeJS](http://nodejs.org/)
+
+To setup the project :
+
+````
 $ npm install
 $ bower install
-```
+$ gulp
+````
 
-NOTE: Until hologram release a version > 1.1.0 you have to build and install the gem manually.
+##@TODO
 
-```
-$ git clone https://github.com/trulia/hologram.git
-$ cd hologram
-$ gem build hologram.gemspec
-$ gem install hologram-1.1.0.gem // 1.1.0 but actually the head of master
-```
+* Dark theme
 
-Install Hologram from the Gemfile (for version > 1.1.0):
+##Dependencies
+* [jQuery](https://github.com/jquery/jquery)
+* [Angular.js](https://github.com/angular/angular.js), by Google
+* [Angular-Strap](https://github.com/mgcrea/angular-strap), by Mgcrea
+* [AngularUI Bootstrap](https://github.com/angular-ui/bootstrap), by AngularUI
+* [Slidebars](https://github.com/adchsm/Slidebars), by adchsm
 
-```
-$ bundle
-$ cd ..
-```
-
-Build project using Gulp:
-
-[Browser-sync](http://www.browsersync.io) is automatically set up on `localhost` and will allow you to make changes and see them in real time.
