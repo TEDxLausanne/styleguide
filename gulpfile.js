@@ -22,6 +22,7 @@
     concat = require('gulp-concat'),
     shell = require('gulp-shell'),
     stylish = require('jshint-stylish');
+    deploy = require("gulp-gh-pages");
 
 // JS task
 gulp.task('scripts', function() {
@@ -133,8 +134,6 @@ gulp.task('build-images', function() {
 //   return gulp.src(['assets/fonts/**'])
 //           .pipe(gulp.dest('build/fonts'));
 // });
-
-var deploy = require("gulp-gh-pages");
 
 gulp.task('deploy', function () {
     gulp.src("./styleguide/**/*")
