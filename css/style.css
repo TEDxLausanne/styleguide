@@ -18,15 +18,6 @@
  * Licensed under MIT
  =========================================================== */
 /* ==========================================================
- * bootstrap-variables.scss
- * Bootstrap variables with custom values to fits with our project
- *
- * Author: Marc Friederich, m.friederich@me.com
- * Date:   2014-07-28 21:30:14
- *
- * Licensed under MIT
- =========================================================== */
-/* ==========================================================
  * bootstrap.scss
  * Bootstrap sass files import
  *
@@ -133,8 +124,9 @@ figure {
   margin: 1em 40px; }
 
 hr {
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0; }
 
 pre {
@@ -185,7 +177,8 @@ input {
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0; }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -194,6 +187,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
   -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
@@ -230,7 +224,7 @@ th {
     color: #000 !important;
     background: transparent !important;
     -webkit-box-shadow: none !important;
-            box-shadow: none !important; }
+    box-shadow: none !important; }
 
   a,
   a:visited {
@@ -911,11 +905,13 @@ th {
 
 * {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 html {
@@ -1315,7 +1311,7 @@ kbd {
   background-color: #333333;
   border-radius: 3px;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
-          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25); }
 
 pre {
   display: block;
@@ -2231,6 +2227,7 @@ label {
 
 input[type="search"] {
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 input[type="radio"],
@@ -3368,7 +3365,7 @@ tbody.collapse.in {
   padding-left: 15px;
   border-top: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch; }
   .navbar-collapse:before, .navbar-collapse:after {
     content: " ";
@@ -3382,7 +3379,7 @@ tbody.collapse.in {
       width: auto;
       border-top: 0;
       -webkit-box-shadow: none;
-              box-shadow: none; }
+      box-shadow: none; }
       .navbar-collapse.collapse {
         display: block !important;
         height: auto !important;
@@ -3494,7 +3491,7 @@ tbody.collapse.in {
       background-color: transparent;
       border: 0;
       -webkit-box-shadow: none;
-              box-shadow: none; }
+      box-shadow: none; }
       .navbar-nav .open .dropdown-menu > li > a,
       .navbar-nav .open .dropdown-menu .dropdown-header {
         padding: 5px 15px 5px 25px; }
@@ -4075,7 +4072,7 @@ a.thumbnail.active {
   background-color: transparent;
   background-image: none;
   -webkit-box-shadow: none;
-          box-shadow: none; }
+  box-shadow: none; }
 
 .progress-bar-success {
   background-color: #5cb85c; }
@@ -5651,13 +5648,13 @@ category: Layout - Buttons
 
 .btn-success {
   -webkit-box-shadow: 0 2px 0 #1e441e;
-          box-shadow: 0 2px 0 #1e441e; }
+  box-shadow: 0 2px 0 #1e441e; }
   .btn-success:hover {
     background-color: #449d44; }
 
 .btn-primary {
   -webkit-box-shadow: 0 2px 0 #520c00;
-          box-shadow: 0 2px 0 #520c00; }
+  box-shadow: 0 2px 0 #520c00; }
   .btn-primary:hover {
     background-color: #d21f00; }
 

@@ -3,6 +3,18 @@ CHANGELOG
 
 This changelog references the relevant changes and bug fixes done.
 
+* 1.2.5(2014-08-21)
+  * Yago : lock header title styles
+
+* 1.2.5(2014-08-18)
+  * Yago : safer config elements loop
+
+* 1.2.3 & 1.2.4(2014-08-08)
+  * Yago : Add web components support
+
+* 1.2.2(2014-08-05)
+  * Yago : fix markdown renderer issue from hologram 1.2.X
+
 * 1.2.1(2014-07-08)
   * Yago : fix text-transform weakness
 
