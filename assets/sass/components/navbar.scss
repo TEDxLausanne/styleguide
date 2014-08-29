@@ -63,6 +63,11 @@ category: Components - Navbar
     }
   }
 }
+@media (max-width: $grid-float-breakpoint) {
+  .navbar-default .navbar-collapse{
+    border-bottom: 2px solid $gray-lighter;
+  }
+}
 
 
 /*doc
