@@ -5973,13 +5973,17 @@ Speaker cards with neat hover effect
 ```html_example
 <div class="row">
     <div class="col-sm-4 col-xs-6">
-        <a class="speaker css3-shadow" href="#">
-            <div class="speaker-photo">
-                <img src="img/speaker.jpg" width="100%"/>
+        <a class="speaker" href="#">
+            <div class="shadow-left">
+                <div class="shadow-right">
+                    <div class="speaker-photo">
+                        <img src="img/speaker.jpg" width="100%"/>
+                    </div>
+                    <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
+                    <h4>Speaker name</h4>
+                    <p>Something special about this guy ?</p>
+                </div>
             </div>
-            <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
-            <h4>Speaker name</h4>
-            <p>Something special about this guy ?</p>
         </a>
     </div>
 </div>
@@ -5991,33 +5995,45 @@ On a gray background
 <div class="well">
     <div class="row">
         <div class="col-sm-4 col-xs-6">
-            <a class="speaker css3-shadow" href="#">
-                <div class="speaker-photo">
-                    <img src="img/speaker.jpg" width="100%"/>
+            <a class="speaker" href="#">
+                <div class="shadow-left">
+                    <div class="shadow-right">
+                        <div class="speaker-photo">
+                            <img src="img/speaker.jpg" width="100%"/>
+                        </div>
+                        <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
+                        <h4>Speaker name</h4>
+                        <p>Something special about this guy ?</p>
+                    </div>
                 </div>
-                <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
-                <h4>Speaker name</h4>
-                <p>Something special about this guy ?</p>
             </a>
         </div>
         <div class="col-sm-4 col-xs-6">
-            <a class="speaker css3-shadow" href="#">
-                <div class="speaker-photo">
-                    <img src="img/speaker.jpg" width="100%"/>
+            <a class="speaker" href="#">
+                <div class="shadow-left">
+                    <div class="shadow-right">
+                        <div class="speaker-photo">
+                            <img src="img/speaker.jpg" width="100%"/>
+                        </div>
+                        <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
+                        <h4>Speaker name</h4>
+                        <p>Something special about this guy ?</p>
+                    </div>
                 </div>
-                <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
-                <h4>Speaker name</h4>
-                <p>Something special about this guy ?</p>
             </a>
         </div>
         <div class="col-sm-4 col-xs-6">
-            <a class="speaker css3-shadow" href="#">
-                <div class="speaker-photo">
-                    <img src="img/speaker.jpg" width="100%"/>
+            <a class="speaker" href="#">
+                <div class="shadow-left">
+                    <div class="shadow-right">
+                        <div class="speaker-photo">
+                            <img src="img/speaker.jpg" width="100%"/>
+                        </div>
+                        <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
+                        <h4>Speaker name</h4>
+                        <p>Something special about this guy ?</p>
+                    </div>
                 </div>
-                <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
-                <h4>Speaker name</h4>
-                <p>Something special about this guy ?</p>
             </a>
         </div>
     </div>
@@ -6035,62 +6051,67 @@ On a gray background
   .speaker .speaker-photo {
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    shape-inside: polygon(4% 4%, 96% 4%, 96% 96%, 4% 96%);
-    -webkit-clip-path: polygon(4% 4%, 96% 4%, 96% 96%, 4% 96%); }
+    shape-inside: polygon(4% 4%, 96% 4%, 96% 100%, 4% 100%);
+    -webkit-clip-path: polygon(4% 4%, 96% 4%, 96% 100%, 4% 100%); }
   .speaker:hover, .speaker:focus {
     background-color: white;
     color: #333333;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
     .speaker:hover .speaker-photo, .speaker:focus .speaker-photo {
       shape-inside: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      -webkit-filter: brightness(1.05) contrast(1.05); }
     .speaker:hover .btn-speaker, .speaker:focus .btn-speaker {
       background-color: rgba(0, 0, 0, 0.5);
-      shape-inside: polygon(0 0, 120% 0, 120% 120%, 0 120%);
-      -webkit-clip-path: polygon(0 0, 120% 0, 120% 120%, 0 120%); }
+      background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(1%, transparent), color-stop(50%, rgba(0, 0, 0, 0.5)), to(transparent));
+      background: -webkit-linear-gradient(left, transparent 0%, transparent 1%, rgba(0, 0, 0, 0.5) 50%, transparent 100%);
+      background: linear-gradient(to right, transparent 0%, transparent 1%, rgba(0, 0, 0, 0.5) 50%, transparent 100%); }
   .speaker h4, .speaker p {
     margin-left: 4%;
     margin-right: 4%; }
   .speaker .btn-speaker {
-    shape-inside: polygon(4% 4%, 96% 4%, 96% 96%, 4% 96%);
-    -webkit-clip-path: polygon(4% 4%, 96% 4%, 96% 96%, 4% 96%);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     position: absolute;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(1%, transparent), color-stop(50%, rgba(0, 0, 0, 0.55)), to(transparent));
+    background: -webkit-linear-gradient(left, transparent 0%, transparent 1%, rgba(0, 0, 0, 0.55) 50%, transparent 100%);
+    background: linear-gradient(to right, transparent 0%, transparent 1%, rgba(0, 0, 0, 0.55) 50%, transparent 100%);
     color: white;
-    margin-top: -2.2em;
-    display: none; }
-
-.css3-shadow {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease; }
-
-.css3-shadow:hover {
-  position: relative;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
+    margin-top: -2.1em; }
 
 /*==================================================
  * Glow effect with box-shadow
  * ===============================================*/
-.css3-shadow:after {
+.shadow-right:after, .shadow-left:after {
   content: "";
   position: absolute;
   opacity: 0;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  bottom: 0px;
-  width: 120%;
-  height: 20px;
-  left: -10%;
-  right: -10%;
-  background: -webkit-radial-gradient(50% -3%, ellipse cover, rgba(0, 0, 0, 0.3), rgba(97, 97, 97, 0) 40%);
-  background: -webkit-radial-gradient(50% -3%, ellipse, rgba(0, 0, 0, 0.3), rgba(97, 97, 97, 0) 40%);
-  background: radial-gradient(ellipse at 50% -3%, rgba(0, 0, 0, 0.3), rgba(97, 97, 97, 0) 40%); }
+  top: 5%;
+  width: 6%;
+  height: 100%;
+  background: -webkit-radial-gradient(50% 50%, ellipse cover, rgba(0, 0, 0, 0.1), rgba(97, 97, 97, 0) 60%);
+  background: -webkit-radial-gradient(50% 50%, ellipse, rgba(0, 0, 0, 0.1), rgba(97, 97, 97, 0) 60%);
+  background: radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 0.1), rgba(97, 97, 97, 0) 60%); }
 
-.css3-shadow:hover:after {
-  bottom: -20px;
-  top: 100%;
+.shadow-right:after {
+  left: 94%; }
+
+.shadow-left:after {
+  right: 94%; }
+
+.shadow-right:hover:after, .shadow-left:hover:after {
   opacity: 1; }
+
+.shadow-right:hover:after {
+  left: 98%; }
+
+.shadow-left:hover:after {
+  right: 98%; }
 
 /*doc
 ---
