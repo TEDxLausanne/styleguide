@@ -1,0 +1,146 @@
+/*doc
+---
+title: Speaker card
+name: a-speaker
+category: Layout - Speaker
+---
+
+Speaker cards with neat hover effect
+
+```html_example
+<div class="row">
+    <div class="col-sm-4 col-xs-6">
+        <a class="speaker css3-shadow" href="#">
+            <div class="speaker-photo">
+                <img src="img/speaker.jpg" width="100%"/>
+            </div>
+            <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
+            <h4>Speaker name</h4>
+            <p>Something special about this guy ?</p>
+        </a>
+    </div>
+</div>
+```
+
+On a gray background
+
+```html_example
+<div class="well">
+    <div class="row">
+        <div class="col-sm-4 col-xs-6">
+            <a class="speaker css3-shadow" href="#">
+                <div class="speaker-photo">
+                    <img src="img/speaker.jpg" width="100%"/>
+                </div>
+                <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
+                <h4>Speaker name</h4>
+                <p>Something special about this guy ?</p>
+            </a>
+        </div>
+        <div class="col-sm-4 col-xs-6">
+            <a class="speaker css3-shadow" href="#">
+                <div class="speaker-photo">
+                    <img src="img/speaker.jpg" width="100%"/>
+                </div>
+                <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
+                <h4>Speaker name</h4>
+                <p>Something special about this guy ?</p>
+            </a>
+        </div>
+        <div class="col-sm-4 col-xs-6">
+            <a class="speaker css3-shadow" href="#">
+                <div class="speaker-photo">
+                    <img src="img/speaker.jpg" width="100%"/>
+                </div>
+                <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
+                <h4>Speaker name</h4>
+                <p>Something special about this guy ?</p>
+            </a>
+        </div>
+    </div>
+</div>
+```
+ */
+ .speaker{
+    display: block;
+    position: relative;
+    color: $text-color;
+    padding-bottom: 10px;
+    transition: all 0.4s ease;
+    background-color: rgba(255,255,255,0);
+
+    .speaker-photo{
+        transition: all 0.4s ease;
+        shape-inside: polygon(4% 4%,  96% 4%, 96% 96%, 4% 96%);
+        -webkit-clip-path: polygon(4% 4%,  96% 4%, 96% 96%, 4% 96%);
+    }
+    &:hover,
+    &:focus{
+        background-color: rgba(255,255,255,1);
+        color: $text-color;
+        text-decoration: none;
+        // box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+
+        .speaker-photo{
+            // shape-inside: polygon(0 0, 100% 0, 100% 100%, 100% 0);
+            shape-inside: polygon(0 0,  100% 0, 100% 100%, 0 100%);
+            -webkit-clip-path: polygon(0 0,  100% 0, 100% 100%, 0 100%);
+        }
+        .btn-speaker{
+            background-color: rgba(0,0,0,0.5);
+            shape-inside: polygon(0 0,  120% 0, 120% 120%, 0 120%);
+            -webkit-clip-path: polygon(0 0,  120% 0, 120% 120%, 0 120%);
+        }
+
+    }
+    h4, p{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .btn-speaker{
+        // transition: all 0.02s ease-in-out;
+        shape-inside: polygon(4% 4%,  96% 4%, 96% 96%, 4% 96%);
+        -webkit-clip-path: polygon(4% 4%,  96% 4%, 96% 96%, 4% 96%);
+        position: absolute;
+        background-color: rgba(0,0,0,1);
+        color: $body-bg;
+        margin-top: -2.2em;
+        display: none;
+    }
+
+}
+.css3-shadow{
+    transition: all 0.4s ease;
+}
+
+.css3-shadow:hover{
+
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.1);
+}
+/*==================================================
+ * Glow effect with box-shadow
+ * ===============================================*/
+ .css3-shadow:after{
+      content:"";
+    position:absolute;
+    // z-index:-1;
+    // top:100%;
+    opacity: 0;
+    transition: all 0.4s ease;
+    bottom:0px;
+    width:120%;
+    height:20px;
+    left:-10%;
+    right:-10%;
+    background:-webkit-radial-gradient(50% -3%, ellipse cover, rgba(00, 00, 00, 0.3), rgba(97, 97, 97, 0.0) 40%);
+    background:radial-gradient(ellipse at 50% -3%, rgba(00, 00, 00, 0.3), rgba(97, 97, 97, 0.0) 40%);
+ }
+
+ .css3-shadow:hover:after{
+  bottom:-20px;
+  top:100%;
+  opacity: 1;
+
+}
