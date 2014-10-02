@@ -16,6 +16,9 @@ category: Layout - Typography
 <h6>My title level 6</h6>
 ```
 */
+body{
+  font-weight: 300;
+}
 h4{
   text-transform: uppercase;
 }
