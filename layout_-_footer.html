@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title></title>
+    <title>Layout - Footer</title>
 
     <!-- Styleguide CSS -->
     <link rel="stylesheet" href="./theme-build/css/vendors.css">
@@ -582,7 +582,7 @@
             
               
               
-                <li><a href="layout_-_footer.html">Footer</a></li>
+                <li><a class="active" href="layout_-_footer.html">Footer</a></li>
               
             
           
@@ -596,6 +596,8 @@
     </div>
 
     <header class="cortana-header sb-slide">
+      
+        <h1>Footer</h1>
       
       <div id="open-left" class="cortana-menu-btn">
         <span></span>
@@ -613,6 +615,10 @@
 
         <nav id="cortana-inside-nav" class="cortana-inside-nav" bs-affix>
           <ul bs-scrollspy-list data-offset="-30">
+             
+              
+                <li><a href="#b-footer">Footer</a></li>
+              
             
           </ul>
         </nav>
@@ -622,26 +628,98 @@
 
 
 
-<h1>TEDxLausanne Styleguides</h1>
+<h1 id="b-footer">Footer</h1>
+</div><div class="codeExample"><div class="exampleOutput"><footer class="footer dark-background">
+ <div class="container super-isolate">
+    <div class="row">
+      <div class="col-md-2">
+        <h4>TEDXLausanne</h4>
+        <p>This independently organized TEDx event is operated under license from TED.</p>
+        <ul class="nav nav-pills">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Credits</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h4>Get Involved</h4>
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#">Become a speaker</a></li>
+          <li><a href="#">Join the team</a></li>
+          <li><a href="#">Become a TEDxLausanne partner</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4>Newsletter</h4>
+        <p>Get in touch with us and subscribe to our newsletter</p>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail2">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+          </div>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+      <div class="col-md-2">
+        <h4>Connect with us</h4>
+        <ul>
+         <li><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+         <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+         <li><a href="#"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+         <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+         <li><a href="#"><i class="fa fa-youtube"></i> Youtube</a></li>
+         <li><a href="#"><i class="fa fa-rocket"></i> blog</a></li>
+       </ul>
+     </div>
+   </div>
+ </div>
+</footer>
 
-<p>Welcome to the web styleguide for TEDxLausanne association. You may fork it and adapt it for your needs.</p>
+</div><div class="codeBlock"><div class="highlight"><pre><span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"footer dark-background"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container super-isolate"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-2"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4&gt;</span>TEDXLausanne<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p&gt;</span>This independently organized TEDx event is operated under license from TED.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-pills"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>About<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Credits<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-3"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4&gt;</span>Get Involved<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-pills nav-stacked"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Become a speaker<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Join the team<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Become a TEDxLausanne partner<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-4"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4&gt;</span>Newsletter<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Get in touch with us and subscribe to our newsletter<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span> <span class="na">role=</span><span class="s">"form"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"exampleInputEmail2"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail2"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Subscribe<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-2"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4&gt;</span>Connect with us<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;ul&gt;</span>
+         <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-twitter-square"</span><span class="nt">&gt;&lt;/i&gt;</span> Twitter<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+         <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-facebook-square"</span><span class="nt">&gt;&lt;/i&gt;</span> Facebook<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+         <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-linkedin-square"</span><span class="nt">&gt;&lt;/i&gt;</span> LinkedIn<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+         <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-instagram"</span><span class="nt">&gt;&lt;/i&gt;</span> Instagram<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+         <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-youtube"</span><span class="nt">&gt;&lt;/i&gt;</span> Youtube<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+         <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-rocket"</span><span class="nt">&gt;&lt;/i&gt;</span> blog<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+       <span class="nt">&lt;/ul&gt;</span>
+     <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+ <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/footer&gt;</span>
 
-<h2>Purpose of this Styleguide</h2>
-
-<p>We developped this styleguide to maintain consistency accross the different web projects we have at TEDxLausanne.</p>
-
-<h2>Usage</h2>
-
-<p>We encourage you to use this styleguide. To do so, install it as a bower package. If you would like to conribute. Awesome. Refer to the README file on the github repository.</p>
-
-<h2>Version management</h2>
-
-<p>Version management for this styleguide follow semserv.org principe.</p>
-
-<h2>Licence</h2>
-
-<p>Licence for this work is MIT</p>
-
+</pre></div></div></div><div class="cortana-content">
         </div>
       </div>
     </div>
