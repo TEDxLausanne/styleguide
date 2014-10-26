@@ -171,6 +171,9 @@ category: Layout - Typography
  </p>
 ```
 */
+strong, b{
+  font-weight: $base-font-weight;
+}
 
 /*doc
 ---
