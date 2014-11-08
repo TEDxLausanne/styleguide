@@ -11,7 +11,10 @@ category: Layout - Images
 <img src="http://lorempixel.com/700/400/cats" alt="Some cats image">
 ```
 */
-
+img{
+    width: 100%;
+    height: auto;
+}
 
 
 /*doc
