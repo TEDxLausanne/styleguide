@@ -51,9 +51,15 @@ A banner with photo, background: cover
     background-size: cover;
     padding-top: 30px;
     padding-bottom: 30px;
+    &:hover{
+      text-decoration: none;
+    }
  }
  .banner-main{
     border-bottom: 5px solid $brand-primary;
+    &:hover{
+      border-bottom-color: lighten($brand-primary,6%);
+    }
  }
  .banner-dark{
     color: $gray-lighter;
