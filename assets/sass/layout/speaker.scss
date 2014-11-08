@@ -1,6 +1,6 @@
 /*doc
 ---
-title: Speaker card
+title: Usage of Mediacard for Speaker
 name: a-speaker
 category: Layout - Speaker
 ---
@@ -10,13 +10,13 @@ Speaker cards with neat hover effect
 ```html_example
 <div class="row">
     <div class="col-sm-4 col-xs-6">
-        <a class="speaker" href="#">
+        <a class="mediacard" href="#">
             <div class="shadow-left">
                 <div class="shadow-right">
-                    <div class="speaker-photo">
+                    <div class="mediacard-photo">
                         <img src="img/speaker.jpg" width="100%"/>
                     </div>
-                    <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
+                    <div class="btn btn-default btn-block btn-mediacard">Watch the talk</div>
                     <h4>Speaker name</h4>
                     <p>Something special about this guy ?</p>
                 </div>
@@ -32,13 +32,13 @@ On a gray background
 <div class="well">
     <div class="row">
         <div class="col-sm-4 col-xs-6">
-            <a class="speaker" href="#">
+            <a class="mediacard" href="#">
                 <div class="shadow-left">
                     <div class="shadow-right">
-                        <div class="speaker-photo">
+                        <div class="mediacard-photo">
                             <img src="img/speaker.jpg" width="100%"/>
                         </div>
-                        <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
+                        <div class="btn btn-default btn-block btn-mediacard">Watch the talk</div>
                         <h4>Speaker name</h4>
                         <p>Something special about this guy ?</p>
                     </div>
@@ -46,13 +46,13 @@ On a gray background
             </a>
         </div>
         <div class="col-sm-4 col-xs-6">
-            <a class="speaker" href="#">
+            <a class="mediacard" href="#">
                 <div class="shadow-left">
                     <div class="shadow-right">
-                        <div class="speaker-photo">
+                        <div class="mediacard-photo">
                             <img src="img/speaker.jpg" width="100%"/>
                         </div>
-                        <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
+                        <div class="btn btn-default btn-block btn-mediacard">Watch the talk</div>
                         <h4>Speaker name</h4>
                         <p>Something special about this guy ?</p>
                     </div>
@@ -60,13 +60,13 @@ On a gray background
             </a>
         </div>
         <div class="col-sm-4 col-xs-6">
-            <a class="speaker" href="#">
+            <a class="mediacard" href="#">
                 <div class="shadow-left">
                     <div class="shadow-right">
-                        <div class="speaker-photo">
+                        <div class="mediacard-photo">
                             <img src="img/speaker.jpg" width="100%"/>
                         </div>
-                        <div class="btn btn-default btn-block btn-speaker">Watch the talk</div>
+                        <div class="btn btn-default btn-block btn-mediacard">Watch the talk</div>
                         <h4>Speaker name</h4>
                         <p>Something special about this guy ?</p>
                     </div>
@@ -77,17 +77,22 @@ On a gray background
 </div>
 ```
  */
- .speaker{
+ .mediacard{
     display: block;
     position: relative;
     color: $text-color;
     padding-bottom: 10px;
+    margin-bottom: 20px;
     transition: all 0.4s ease;
     background-color: rgba(255,255,255,0);
-    .speaker-photo{
+    .mediacard-photo{
         transition: all 0.4s ease;
         shape-inside: polygon(4% 4%,  96% 4%, 96% 100%, 4% 100%);
         -webkit-clip-path: polygon(4% 4%,  96% 4%, 96% 100%, 4% 100%);
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
     &:hover,
     &:focus{
@@ -96,21 +101,24 @@ On a gray background
         text-decoration: none;
         -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.1);
         box-shadow:0 1px 4px rgba(0, 0, 0, 0.1);
-        .speaker-photo{
+        .mediacard-photo{
             shape-inside: polygon(0 0,  100% 0, 100% 100%, 0 100%);
             -webkit-clip-path: polygon(0 0,  100% 0, 100% 100%, 0 100%);
             -webkit-filter: brightness(1.05) contrast(1.05);
         }
-        .btn-speaker{
+        .btn-mediacard{
             background-color: rgba(0,0,0,0.5);
             background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%);
         }
+    }
+    h4{
+        margin-bottom: 4px;
     }
     h4, p{
         margin-left: 4%;
         margin-right: 4%;
     }
-    .btn-speaker{
+    .btn-mediacard{
         transition: all 0.4s ease-in-out;
         position: absolute;
         background-color: rgba(0,0,0,0.8);
