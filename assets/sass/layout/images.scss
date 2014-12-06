@@ -8,12 +8,14 @@ category: Layout - Images
 
 
 ```html_example
-<img src="http://lorempixel.com/700/400/cats" alt="Some cats image">
+<img src="http://lorempixel.com/700/400/cats" alt="Some cats image" class="img-responsive">
 ```
 */
-img{
-    width: 100%;
-    height: auto;
+.full-image{
+    img{
+        width: 100%;
+        height: auto;
+    }
 }
 
 

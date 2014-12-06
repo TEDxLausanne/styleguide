@@ -13,7 +13,7 @@
     gutil = require('gulp-util'),
     notify = require('gulp-notify'),
     jshint = require('gulp-jshint'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     browserSync = require('browser-sync'),
@@ -93,7 +93,7 @@ gulp.task('styles', function() {
       .on('error', notify.onError("Error: <%= error.message %>"))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
     .pipe(gulp.dest('build/css'))
-    // .pipe(minifycss())
+    .pipe(minifycss())
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css'));
 });
