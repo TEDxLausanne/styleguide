@@ -23,44 +23,51 @@ category: Layout - Footer
 
 ```html_example
 <footer class="footer dark-background">
- <div class="container super-isolate">
+ <div class="container-fluid super-isolate">
     <div class="row">
       <div class="col-md-2">
-        <h4>TEDXLausanne</h4>
-        <p>This independently organized TEDx event is operated under license from TED.</p>
-        <ul class="nav nav-pills">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Credits</a></li>
-        </ul>
+        <div class="footer-col">
+          <h4>TEDXLausanne</h4>
+          <p><small>This independently organized TEDx event is operated under license from TED.</small></p>
+          <ul class="nav nav-links nav-pills uppercase">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Credits</a></li>
+          </ul>
+        </div>
       </div>
       <div class="col-md-3">
-        <h4>Get Involved</h4>
-        <ul class="nav nav-pills nav-stacked">
-          <li><a href="#">Become a speaker</a></li>
-          <li><a href="#">Join the team</a></li>
-          <li><a href="#">Become a TEDxLausanne partner</a></li>
-        </ul>
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <div class="region-footer-menu">
+            <ul class="nav menu">
+              <li><a href="#">Become a speaker</a></li>
+              <li><a href="#">Join the team</a></li>
+              <li><a href="#">Become a TEDxLausanne partner</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div class="col-md-4">
-        <h4>Newsletter</h4>
-        <p>Get in touch with us and subscribe to our newsletter</p>
-        <form class="form-inline" role="form">
-          <div class="form-group">
-            <label class="sr-only" for="exampleInputEmail2">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-          </div>
-          <button type="submit" class="btn btn-primary">Subscribe</button>
-        </form>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Get in touch with us and subscribe to our newsletter</p>
+          <form class="form-inline" role="form">
+            <div class="form-group">
+              <label class="sr-only" for="exampleInputEmail2">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+            </div>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
       </div>
       <div class="col-md-2">
         <h4>Connect with us</h4>
-        <ul>
-         <li><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
-         <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-         <li><a href="#"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
-         <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
-         <li><a href="#"><i class="fa fa-youtube"></i> Youtube</a></li>
-         <li><a href="#"><i class="fa fa-rocket"></i> blog</a></li>
+        <ul class="nav-social nav nav-pills">
+         <li><a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></a></li>
+         <li><a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+         <li><a href="#"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a></li>
+         <li><a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a></li>
+         <li><a href="#"><i class="fa fa-youtube"></i><span>Youtube</span></a></li>
        </ul>
      </div>
    </div>
@@ -69,18 +76,50 @@ category: Layout - Footer
 
 ```
 */
+.footer{
+  min-height: 400px;
+  .nav{
+    font-size: $font-size-small;
+  }
+  h4{
+    margin-bottom: 20px;
+  }
+}
+.footer-col{
+  @media (min-width: $screen-md) {
+  border-right: 1px solid $gray;
+  padding-right: 25px;
+  }
+  @media (max-width: $screen-sm) {
+    border-right: none;
+    border-bottom: 1px solid $gray;
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+}
 .dark-background{
   background-color: $gray-darker;
   color: $gray-lighter;
-  .nav > li > a{
-      padding-left: 0;
-      transition: all 0.4s ease;
-    &:hover{
-      padding-left: 15px;
-    }
+  h1, h2, h3, h4, h5, h6{
+    color: $gray-light;
   }
 
 }
 .nav-inverse{
 
+}
+.region-footer-menu{
+  .nav{
+    li{
+      a{
+        border-top: 1px solid $gray;
+        padding-left: 0;
+        color: $gray-lighter;
+        &:hover{
+          color: $brand-primary;
+          background-color: transparent;
+        }
+      }
+    }
+  }
 }

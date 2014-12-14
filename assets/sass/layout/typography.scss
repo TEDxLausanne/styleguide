@@ -172,7 +172,10 @@ category: Layout - Typography
 ```
 */
 strong, b{
-  font-weight: $base-font-weight;
+  font-weight: 700;
+}
+.uppercase{
+  text-transform: uppercase;
 }
 
 /*doc

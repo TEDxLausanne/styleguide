@@ -17,7 +17,7 @@
     "yamm3": "1.0.*",
     "respond": "~1.4.2",
     "html5shiv": "~3.7.2",
-    "font-awesome": "~4.1.0"
+    "font-awesome": "~4.2.0"
   },
   "devDependencies": {
     "Cortana": "~1.2.1"

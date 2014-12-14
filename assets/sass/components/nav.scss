@@ -27,6 +27,112 @@ category: Components - Nav
 */
 
 
+/*doc
+---
+title: Social
+name: b-social
+category: Components - Nav
+---
+
+```html_example
+<ul class="nav-social nav nav-pills">
+<li><a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></a></li>
+<li><a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+<li><a href="#"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a></li>
+<li><a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a></li>
+<li><a href="#"><i class="fa fa-youtube"></i><span>Youtube</span></a></li>
+</ul>
+```
+*/
+.nav-social{
+ span{
+  display: none;
+ }
+ >li, li + li {
+  margin-left: 0;
+ }
+ > li > a{
+  font-size: $font-size-h2;
+  line-height: $font-size-h2;
+  width: $font-size-h2+24px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 12px;
+  text-align: center;
+  background-color: $gray-darker;
+  color: $gray-lighter;
+  transition: background-color 0.3s ease-in-out;
+  &:hover{
+    background-color: $gray;
+  }
+ }
+}
+.dark-background{
+  .nav-social{
+     > li > a{
+      background-color: $gray;
+      color: $gray-darker;
+      &:hover{
+        background-color: $gray-light;
+      }
+    }
+  }
+}
+
+/*doc
+---
+title: Links
+name: b-links
+category: Components - Nav
+---
+
+```html_example
+<ul class="nav nav-pills nav-links">
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Profile</a></li>
+  <li><a href="#">Profile</a></li>
+</ul>
+```
+*/
+.nav-links{
+  > li {
+
+    // Links rendered as pills
+    > a {
+      padding-left: 0;
+      padding-right: 10px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      border-right: 1px solid $brand-primary;
+      margin-right: 10px;
+      &:hover,
+      &:focus {
+        color: $brand-primary;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+    + li {
+      margin-left: 0;
+    }
+
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: inherit;
+        text-decoration: underline;
+        background-color: transparent;
+      }
+    }
+  }
+  >li:last-child{
+    > a {
+      border-right: none;
+    }
+  }
+}
 
 /*doc
 ---

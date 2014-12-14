@@ -10,12 +10,13 @@
 
 @charset "UTF-8";
 
-// @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
 
 // INIT ------------------------------------
 @import 'style-variables';
 // @import 'bootstrap-variables';
 @import 'bootstrap';
+@import 'fontawesome';
 
 // LAYOUT ----------------------------------
 @import 'layout/brand';

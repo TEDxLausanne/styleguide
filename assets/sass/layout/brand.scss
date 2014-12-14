@@ -22,11 +22,17 @@ category: Layout - Brand
 ---
 
 ```html_example
-<a href="#" class="brand hidden-xs">
+<a href="#" class="brand hidden-xs logo">
   <img src="img/logo_tedx.svg" onerror="this.onerror=null; this.src='img/logo_tedx.png'" alt="TEDxLausanne" />
 </a>
 ```
 */
+.logo img{
+  @media (max-width: $screen-sm-max) {
+    max-width: 90%;
+  }
+}
+
 
 //=============================================================================
 // COLORS
