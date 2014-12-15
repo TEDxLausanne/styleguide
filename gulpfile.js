@@ -45,6 +45,11 @@ gulp.task('vendors', function() {
     ])
     .pipe(gulp.dest('build/css/bootstrap'));
 
+  gulp.src([
+      './bower_components/font-awesome/fonts/*'
+    ])
+    .pipe(gulp.dest('build/fonts'));
+
 
   // gulp.src([
   //         './bower_components/yamm3/yamm/yamm.css',
