@@ -27,10 +27,13 @@ category: Layout - Brand
 </a>
 ```
 */
-.logo img{
-  @media (max-width: $screen-sm-max) {
-    max-width: 70%;
-  }
+.logo{
+    @media (max-width: $screen-sm-max) {
+      width: 70%;
+      img{
+        max-width: 100%;
+      }
+    }
 }
 
 
