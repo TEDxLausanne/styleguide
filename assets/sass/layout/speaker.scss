@@ -16,7 +16,14 @@ Speaker cards with neat hover effect
                     <div class="mediacard-photo">
                         <img src="img/speaker.jpg" width="100%"/>
                     </div>
-                    <div class="btn btn-default btn-block btn-mediacard">Watch the talk</div>
+                      <div class="btn btn-default btn-block btn-mediacard">
+                        <span class="has-not-video-button">
+                          More about this talk
+                        </span>
+                        <span class="has-video-button">
+                          Watch
+                        </span>
+                      </div>
                     <h4>Speaker name</h4>
                     <p>Something special about this guy ?</p>
                 </div>
@@ -127,6 +134,21 @@ On a gray background
         margin-top: -2.1em;
     }
 
+}
+// Managing has or has not a video
+.has-not-video-button{
+    display: inline;
+}
+.has-video-button{
+    display: none;
+}
+.has-video{
+    .has-not-video-button{
+        display: none;
+    }
+    .has-video-button{
+        display: inline;
+    }
 }
 
 /*==================================================

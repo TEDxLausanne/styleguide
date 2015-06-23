@@ -107,6 +107,49 @@ category: Components - Navbar
 */
 
 
+/*doc
+---
+title: Language menu
+name: b-language-menu
+category: Components - Language nav
+---
+
+```html_example
+<nav class="lang-nav">
+    <ul>
+      <li>
+        <a href="/" lang="en">
+          English
+        </a>
+      </li>
+      <li class="active">
+        <a href="/fr" lang="fr">
+          Français
+        </a>
+      </li>
+    </ul>
+</nav>
+```
+*/
+.lang-nav{
+  float: right;
+  font-size: 0.9em;
+}
+.lang-nav ul{
+  list-style: none;
+}
+.lang-nav ul li{
+  display: inline-block;
+  margin: 0.4em 0 0.4em 0.4em;
+  padding: 0.1em 0.6em 0.1em 0;
+}
+.lang-nav ul li:first-child{
+  border-right: 1px solid $gray-light;
+}
+.lang-nav .active a{
+  color: $gray;
+}
+
 
 /*doc
 ---
