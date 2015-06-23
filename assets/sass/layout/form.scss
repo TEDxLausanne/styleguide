@@ -60,6 +60,10 @@ category: Layout - Form
 </div>
 ```
 */
+.button-primary{
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+}
 
 
 /*doc
