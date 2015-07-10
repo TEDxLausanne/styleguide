@@ -1,13 +1,12 @@
-**/.DS_STORE
-node_modules/*
-bower_components/*
-
+node_modules
+bower_components
 .sass-cache
+*.DS_Store
+.publish
 
-styleguide/.bower.json
-styleguide/bower.json
-styleguide/LICENSE
-styleguide/package.json
-styleguide/README.md
-styleguide
-build
+/dist
+/build
+/styleguide
+
+tests/regression/compare
+tests/regression/temp
