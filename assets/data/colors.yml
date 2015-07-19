@@ -1,6 +1,9 @@
 primary:
-  black: "#000"
-  mine: "#222"
-  silver: "#7F7F7F"
-  dust: "#E6E6E6"
-  white: "#fff"
+  red: "#DC0018"
+  dust: "#ebebeb"
+
+secondary:
+  black: "#242424"
+  mine: "#333333"
+  silver: "#666666"
+  white: "#fefefe"
