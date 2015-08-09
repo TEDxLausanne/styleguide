@@ -4,12 +4,15 @@
 // init:
 @import 'main-variables';
 @import 'bootstrap';
-
+@import 'typography';
 
 // atoms:
+@import 'atoms/buttons';
 
 // molecules:
+@import 'molecules/talks';
 
 // organisms:
+@import 'organisms/talklists';
 
 // templates:

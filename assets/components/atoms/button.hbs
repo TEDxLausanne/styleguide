@@ -1,0 +1,9 @@
+---
+notes: |
+  ##### Usage : `{{> button }}`
+  ##### Options :
+  - **button-type** - Type
+  - **button-content** - Content
+---
+<button class="btn {{#if button-type}}{{ button-type }}{{^}}btn-default{{/if}}">{{#if button-content}}{{ button-content }}{{^}}My default button{{/if}}</button>
+<button class="btn {{#if button-type}}{{ button-type }}{{^}}btn-primary{{/if}}">{{#if button-content}}{{ button-content }}{{^}}My primary button{{/if}}</button>
