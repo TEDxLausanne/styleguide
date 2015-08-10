@@ -3,9 +3,10 @@
   background-color: $dust;
   border: 10px solid $mine;
   &:hover{
+      background-color: $white;
       text-decoration: none;
       img{
-        filter: contrast(120%) brightness(3%);
+        filter: contrast(120%);
       }
   }
   .photo{
