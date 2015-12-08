@@ -34,7 +34,8 @@ category: Layout - Buttons
   }
 }
 
-.btn-primary {
+.btn-primary, button.form-submit {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
   box-shadow: 0 2px 0 darken($brand-primary, 35%);
   &:hover {
     background-color: $brand-primary-dark;

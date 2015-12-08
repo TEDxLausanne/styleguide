@@ -40,26 +40,62 @@ category: Components - Navbar
   .navbar-default {
     .navbar-nav {
       > li {
-        padding: 0 20px;
+        margin: 0 10px;
       }
       > li > a {
-        padding: 10px 8px;
+        padding: 14px 20px;
         text-transform: uppercase;
         border-bottom: 4px solid $navbar-default-bg;
-
         &:hover,
         &:focus {
-          border-bottom: 4px solid $brand-primary;
+          background-color: $gray-dark;
+          color: $navbar-default-bg;
+          border-bottom: 4px solid $gray-dark;
         }
+      }
+      > li li > a{
+          text-transform: uppercase;
+          padding-top: 14px;
+          padding-bottom: 14px;
+          // border-width: 1px;
+          // border-style: solid;
+          // border-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,$gray 16%,$gray 84%,rgba(0,0,0,0) 85%,rgba(0,0,0,0) 100%);
+          // border-top:none;
+          // border-left: none;
+          // border-right: none;
       }
       > .active > a {
         &,
         &:hover,
         &:focus {
+          background-color: $gray-dark;
+          color: $navbar-default-bg;
+          border-bottom: 4px solid $gray-dark;
+        }
+      }
+      > .open > a {
+        &,
+        &:hover,
+        &:focus {
+          background-color: $gray-dark;
+          color: $navbar-default-bg;
+          border-bottom: 4px solid $gray-dark;
+        }
+      }
+      > .active > a:not(.dropdown-toggle) {
+        &,
+        &:hover,
+        &:focus {
+          background-color: $navbar-default-bg;
           color: $gray-darker;
           border-bottom: 4px solid $brand-primary;
         }
       }
+    }
+    .dropdown-menu{
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
 }
@@ -246,6 +282,9 @@ category: Components - Navbar
             <li class="divider"></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
+        </li>
+        <li>
+          <a href="#">Not a dropdown</a>
         </li>
       </ul>
     </div>

@@ -13,7 +13,7 @@
     gutil = require('gulp-util'),
     notify = require('gulp-notify'),
     jshint = require('gulp-jshint'),
-    sass = require('gulp-sass'),
+    sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     browserSync = require('browser-sync'),
@@ -103,17 +103,17 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('build/css'));
 });
 
-gulp.task('print', function() {
-  return gulp.src('assets/sass/print/print.scss')
-    .pipe(sass())
-      .on('error', gutil.beep)
-      .on('error', notify.onError("Error: <%= error.message %>"))
-    .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
-    .pipe(gulp.dest('build/css'))
-    .pipe(minifycss())
-    .pipe(rename('print.min.css'))
-    .pipe(gulp.dest('build/css'));
-});
+// gulp.task('print', function() {
+//   return gulp.src('assets/sass/print/print.scss')
+//     .pipe(sass())
+//       .on('error', gutil.beep)
+//       .on('error', notify.onError("Error: <%= error.message %>"))
+//     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
+//     .pipe(gulp.dest('build/css'))
+//     .pipe(minifycss())
+//     .pipe(rename('print.min.css'))
+//     .pipe(gulp.dest('build/css'));
+// });
 
 
 gulp.task('browser-sync', function() {
@@ -151,11 +151,11 @@ gulp.task('build-pages', function() {
     .pipe(gulp.dest('styleguide/pages'));
 });
 
-gulp.task('default', ['styles', 'print', 'watch', 'vendors', 'browser-sync', 'scripts', 'build-images', 'build-pages']);
-gulp.task('build', ['styles', 'print', 'scripts', 'vendors', 'build-images', 'build-pages']);
+gulp.task('default', ['styles', 'watch', 'vendors', 'browser-sync', 'scripts', 'build-images', 'build-pages']);
+gulp.task('build', ['styles', 'scripts', 'vendors', 'build-images', 'build-pages']);
 
-gulp.task('watch',['styles', 'print', 'scripts', 'vendors', 'build-images', 'build-pages'], function() {
-  gulp.watch('assets/sass/**/*.scss', ['styles', 'print']);
+gulp.task('watch',['styles', 'scripts', 'vendors', 'build-images', 'build-pages'], function() {
+  gulp.watch('assets/sass/**/*.scss', ['styles']);
   gulp.watch('assets/js/*.js', ['scripts']);
   gulp.watch('build/**/*.{js,css}', ['hologram']);
   gulp.watch(['assets/img/**/*.{jpg,png,gif,svg}'], ['build-images']);
