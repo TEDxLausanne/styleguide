@@ -18,10 +18,10 @@ Speaker cards with neat hover effect
                     </div>
                       <div class="btn btn-default btn-block btn-mediacard">
                         <span class="has-not-video-button">
-                          More about this talk
+
                         </span>
                         <span class="has-video-button">
-                          Watch
+                          ▶︎
                         </span>
                       </div>
                     <h4>Speaker name</h4>
@@ -45,7 +45,7 @@ On a gray background
                         <div class="mediacard-photo">
                             <img src="img/speaker.jpg" width="100%"/>
                         </div>
-                        <div class="btn btn-default btn-block btn-mediacard">Watch the talk</div>
+                        <div class="btn btn-default btn-block btn-mediacard">▶︎</div>
                         <h4>Speaker name</h4>
                         <p>Something special about this guy ?</p>
                     </div>
@@ -59,7 +59,7 @@ On a gray background
                         <div class="mediacard-photo">
                             <img src="img/speaker.jpg" width="100%"/>
                         </div>
-                        <div class="btn btn-default btn-block btn-mediacard">Watch the talk</div>
+                        <div class="btn btn-default btn-block btn-mediacard">▶︎</div>
                         <h4>Speaker name</h4>
                         <p>Something special about this guy ?</p>
                     </div>
@@ -73,7 +73,7 @@ On a gray background
                         <div class="mediacard-photo">
                             <img src="img/speaker.jpg" width="100%"/>
                         </div>
-                        <div class="btn btn-default btn-block btn-mediacard">Watch the talk</div>
+                        <div class="btn btn-default btn-block btn-mediacard">▶︎</div>
                         <h4>Speaker name</h4>
                         <p>Something special about this guy ?</p>
                     </div>
@@ -114,8 +114,8 @@ On a gray background
             -webkit-filter: brightness(1.05) contrast(1.05);
         }
         .btn-mediacard{
-            background-color: rgba(0,0,0,0.5);
-            background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0) 100%);
+          background-color: transparent;
+          padding-left: 10px;
         }
     }
     h4{
@@ -128,10 +128,11 @@ On a gray background
     .btn-mediacard{
         transition: all 0.4s ease-in-out;
         position: absolute;
-        background-color: rgba(0,0,0,0.8);
-        background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.55) 50%,rgba(0,0,0,0) 100%);
         color: $body-bg;
         margin-top: -2.1em;
+        background-color: transparent;
+        text-align: left;
+        padding-left: 18px;
     }
 
 }
@@ -162,8 +163,8 @@ On a gray background
     top: 5%;
     width:6%;
     height:100%;
-    background:-webkit-radial-gradient(50% 50%, ellipse cover, rgba(00, 00, 00, 0.1), rgba(97, 97, 97, 0.0) 60%);
-    background:radial-gradient(ellipse at 50% 50%, rgba(00, 00, 00, 0.1), rgba(97, 97, 97, 0.0) 60%);
+    background:-webkit-radial-gradient(50% 50%, ellipse cover, rgba(00, 00, 00, 0.05), rgba(97, 97, 97, 0.0) 60%);
+    background:radial-gradient(ellipse at 50% 50%, rgba(00, 00, 00, 0.05), rgba(97, 97, 97, 0.0) 60%);
 }
 .shadow-right:after{
     left: 94%;

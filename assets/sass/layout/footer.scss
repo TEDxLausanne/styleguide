@@ -84,6 +84,13 @@ category: Layout - Footer
   h4{
     margin-bottom: 20px;
   }
+
+  // Newsletter form
+  #fieldEmail{
+      padding-left: 6px;
+      padding-right: 6px;
+  }
+
 }
 .footer-col{
   @media (min-width: $screen-md) {

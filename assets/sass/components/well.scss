@@ -30,3 +30,18 @@ category: Components - Well
 </div>
 ```
 */
+
+// Used grey background on Watch page
+.page-watch .main-container {
+  background-color: $well-bg;
+  @media (min-width: $screen-sm-max) {
+    .views-exposed-form {
+      position: absolute;
+      top: 52px;
+      right: 0;
+      .views-widget-filter-title label{
+        visibility: hidden;
+      }
+    }
+  }
+}

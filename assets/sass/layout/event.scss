@@ -1,0 +1,208 @@
+/* ==========================================================
+ * event.scss
+ * Event elements
+ *
+ * Author: Marc Friederich, m.friederich@me.com
+ * Date:   2014-07-28 21:30:14
+ *
+ * Licensed under MIT
+ =========================================================== */
+
+@charset "UTF-8";
+
+//=============================================================================
+// Event full teaser
+//=============================================================================
+/*doc
+---
+title: Event full Teaser
+name: a-event
+category: Layout - Event
+---
+
+```html_example
+<div class="event-full-teaser clearfix isolate">
+  <a href="#">
+        <div class="content">
+          <div class="banner banner-dark banner-main" style="background-image:url('http://tedx.dev/sites/default/files/tedxlausannesalon_1600x300.jpg');">
+          <div class="text-center">
+            <h3>
+  «Tiens, c'est gratuit!», un événement payant o_O</h3>
+                                      <h1>TEDxLausanne Salon 2015 #2</h1>
+                        <span property="dc:title" content="TEDxLausanne Salon 2015 #2" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>            <p>
+  <b class="field field-name-field-event-date field-type-datetime field-label-hidden">
+    <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2015-11-17T18:30:00+01:00">Nov 17 2015 - 18:30</span>  </b>
+ –
+  <span class="field field-name-field-event-location field-type-text-long field-label-hidden">
+    Studio Banana, Avenue des Acacias 7, Lausanne  </span>
+</p>
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+```
+*/
+
+.event-full-teaser{
+  a{
+    &:hover, &:active{
+      text-decoration: none;
+      .banner{
+        text-decoration: none;
+        background-blend-mode: luminosity;
+        background-color: $brand-primary;
+      }
+    }
+  }
+}
+
+
+
+//=============================================================================
+// Event full teaser
+//=============================================================================
+/*doc
+---
+title: Event Teaser
+name: a-event-teaser
+category: Layout - Event
+---
+
+```html_example
+<a href="#" class="event_teaser">
+<div class="mediacard-photo">
+<div class="event_photo" style="background-image:url('http://tedx.dev/sites/default/files/tedxlausannesalon_1600x300.jpg');">
+        <div class="event_date">
+
+  <b class="field field-name-field-event-date field-type-datetime field-label-hidden">
+    <span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2015-11-17T18:30:00+01:00">Nov 17 2015 - 18:30</span>  </b>
+        </div>
+        <div class="event_title">
+                                <h4>TEDxLausanne Salon 2015 #2</h4>
+                    <span property="dc:title" content="TEDxLausanne Salon 2015 #2" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>        </div>
+        <div class="event_location">
+
+  <span class="field field-name-field-event-location field-type-text-long field-label-hidden">
+    Studio Banana, Avenue des Acacias 7, Lausanne  </span>
+        </div>
+      </div>
+    <div class="event_content">
+
+            <div class="content">
+        <h3>
+  «Tiens, c'est gratuit!», un événement payant o_O</h3>
+
+  <p class="field field-name-field-event-teaser field-type-text field-label-hidden">
+    Si c’est gratuit, c’est que tu es le produit.  </p>
+    </div>
+    </div>
+  </a>
+```
+*/
+.event_teaser{
+  display: block;
+  background-color: $well-bg;
+  color: $text-color;
+  transition: all 0.4s ease-in-out;
+  border-bottom: 4px solid $well-bg;
+  &:hover, &active{
+    background-color: $gray-lighter;
+    color: $text-color;
+    text-decoration: none;
+    border-bottom: 4px solid $brand-primary;
+    p, h1, h2, h3, h4, h5{
+      text-decoration: none;
+    }
+    .event_photo{
+      background-blend-mode: luminosity;
+      background-color: $brand-primary;
+    }
+  }
+  .event_content{
+    padding: 0.8em;
+  }
+  .event_photo{
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    background: $gray-dark url('../img/unil_bg.jpg') 50% 50%;
+    background-size: cover;
+    padding: 4em 1em 1em;
+  }
+  .event_date{
+    color: $well-bg;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+  .event_title h4{
+    color: $well-bg;
+    margin: 0.2em 0;
+    font-weight: bold;
+    text-transform: none;
+  }
+  .event_location{
+    color: $well-bg;
+  }
+
+  .content{
+    min-height: 8em;
+    h3{
+      margin-top: 0;
+      margin-bottom: 0.2em;
+    }
+  }
+}
+
+
+
+/*doc
+---
+title: Banner
+name: a-banner
+category: Layout - Event
+---
+
+A banner with photo, background: cover
+
+```html_example
+<div class="container container-narrow isolate banner banner-dark banner-main text-center">
+    <h3>perpetual [r]evolution</h3>
+    <h1>TEDxLausanne 2014</h1>
+    <p>
+       My content
+    </p>
+</div>
+```
+ */
+ .banner{
+    transition: all 0.4s ease-in-out;
+    background: $gray-dark url('../img/unil_bg.jpg') 50% 50%;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    @media (max-width: $screen-sm-max) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    h3{
+
+    }
+    h1{
+      margin-top: 0;
+      font-weight: bold;
+      font-size: floor(($font-size-base * 3));
+      a, a:hover{
+        text-decoration: none;
+      }
+    }
+ }
+ .banner-main{
+    border-bottom: 5px solid $brand-primary;
+    &:hover{
+      border-bottom-color: lighten($brand-primary,6%);
+    }
+ }
+ .banner-dark{
+    color: $gray-lighter;
+    h1, a, a:hover, a:active{ color: $gray-lighter; }
+ }

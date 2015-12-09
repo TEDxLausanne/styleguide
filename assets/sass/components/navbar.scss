@@ -43,20 +43,22 @@ category: Components - Navbar
         margin: 0 10px;
       }
       > li > a {
-        padding: 14px 20px;
+        padding: 10px 20px;
         text-transform: uppercase;
         border-bottom: 4px solid $navbar-default-bg;
+        border-top: 4px solid $navbar-default-bg;
         &:hover,
         &:focus {
           background-color: $gray-dark;
           color: $navbar-default-bg;
           border-bottom: 4px solid $gray-dark;
+          border-top: 4px solid $gray-dark;
         }
       }
       > li li > a{
           text-transform: uppercase;
-          padding-top: 14px;
-          padding-bottom: 14px;
+          padding-top: 10px;
+          padding-bottom: 10px;
           // border-width: 1px;
           // border-style: solid;
           // border-image: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,$gray 16%,$gray 84%,rgba(0,0,0,0) 85%,rgba(0,0,0,0) 100%);
@@ -71,6 +73,7 @@ category: Components - Navbar
           background-color: $gray-dark;
           color: $navbar-default-bg;
           border-bottom: 4px solid $gray-dark;
+          border-top: 4px solid $gray-dark;
         }
       }
       > .open > a {
@@ -80,6 +83,7 @@ category: Components - Navbar
           background-color: $gray-dark;
           color: $navbar-default-bg;
           border-bottom: 4px solid $gray-dark;
+          border-top: 4px solid $gray-dark;
         }
       }
       > .active > a:not(.dropdown-toggle) {
@@ -89,6 +93,7 @@ category: Components - Navbar
           background-color: $navbar-default-bg;
           color: $gray-darker;
           border-bottom: 4px solid $brand-primary;
+          border-top: 4px solid $navbar-default-bg;
         }
       }
     }

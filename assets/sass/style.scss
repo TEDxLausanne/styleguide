@@ -10,7 +10,7 @@
 
 @charset "UTF-8";
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
+// @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,700);
 
 // INIT ------------------------------------
 @import 'style-variables';
@@ -28,6 +28,7 @@
 @import 'layout/images.scss';
 @import 'layout/landing.scss';
 @import 'layout/speaker.scss';
+@import 'layout/event.scss';
 @import 'layout/tables.scss';
 @import 'layout/typography.scss';
 
@@ -61,4 +62,3 @@
 @import 'javascript/scrollspy.scss';
 @import 'javascript/tab.scss';
 @import 'javascript/tooltips.scss';
-
