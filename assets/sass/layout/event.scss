@@ -53,6 +53,7 @@ category: Layout - Event
         text-decoration: none;
         background-blend-mode: luminosity;
         background-color: $brand-primary;
+        background-color: #bce4d2; //2016 color
       }
     }
     .banner{
@@ -189,8 +190,8 @@ A banner with photo, background: cover
     transition: all 0.4s ease-in-out;
     background: $gray-dark url('../img/unil_bg.jpg') 50% 50%;
     background-size: cover;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 90px;
+    padding-bottom: 110px;
     @media (max-width: $screen-sm-max) {
       padding-top: 40px;
       padding-bottom: 40px;
